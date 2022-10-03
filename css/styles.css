@@ -1,0 +1,180 @@
+/* colors --------------------------------------- */
+
+:root {
+    --black1: #353535;
+    --black2: #282828;
+    --black3: #1C1C1C;
+    --black4: #111010;
+    --black5: #070707;
+
+    --gold1: #E8D970;
+    --gold2: #D8BA3A;
+    --gold3: #B79F27;
+    --gold4: #937618;
+    --gold5: #775B0E;
+  }
+
+/* colors --------------------------------------- */
+
+html {
+    background-color: #070707;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h4 {
+    color: #D8BA3A;
+    margin: 10px 0 10px 0;
+}
+
+h4 {
+    color: #B79F27;
+    margin: 0;
+}
+
+.notif-paragraph {
+    margin: 5px 0 0 0;
+}
+
+button {
+    color: #070707;
+    font-weight: 500;
+
+    background-color: #937618;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 5px;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #D8BA3A;
+
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+label {
+    color: #D8BA3A;
+    font-weight: 500;
+}
+
+input {
+    border: none;
+    border-radius: 10px;
+    background-color: #070707;
+    color: #E8D970;
+    padding: 10px;
+    width: 600px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 100vh;
+    min-height: 100vh;
+}
+
+.wrapper {
+    background-color: #111010;
+    padding: 15px;
+
+    border-radius: 15px;
+}
+
+.huge-title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.channel-buttons {
+    display: flex;
+    justify-content: center;
+    
+    padding: 20px;
+}
+
+.chat-window {
+    background-color: #1C1C1C;
+    width: 1000px;
+    height: 600px;
+
+    margin: 0 0 20px 0;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    overflow: hidden;
+}
+
+.message-name-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.notification {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+.display-none {
+    display: none;
+}
+
+/* message display */
+
+p {
+    margin: 5px;
+}
+
+.message-display {
+    display: flex;
+    justify-content: space-between;
+
+    background-color: #282828;
+    padding: 15px;
+}
+
+.message-content {
+    display: flex;
+    max-width: 800px;
+}
+
+.username-00 {
+    margin-right: 10px;
+    color: #B79F27;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.message-01 {
+    color: #E8D970;
+    word-break: break-all;
+}
+
+.tstamp-02 {
+    color: gray;
+    font-weight: 500;
+}
+
+/* text bars */
+
+input:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: #E8D970;
+    opacity: 0.3;
+}

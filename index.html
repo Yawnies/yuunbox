@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/norm.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Yuun's Chatbox</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="wrapper">
+            <div class="huge-title">
+                <h1>Yuun's Chatbox</h1>
+                <h4>better than discord!!</h4>
+            </div>
+            <div class="channel-buttons">
+                <button class="chan-butt" id="general">#general</button>
+                <button class="chan-butt" id="gaming">#gaming</button>
+                <button class="chan-butt" id="music">#music</button>
+                <button class="chan-butt" id="ow2">#ow2</button>
+            </div>
+            <div class="chat-window">
+
+            </div>
+            <div class="message-name-input">
+                <form class="msg-input form-custom">
+                    <label for="message">Message:</label>
+                    <input type="text" id="message" placeholder="Type message here..." maxlength="500" required>
+                    <button type="submit">send</button>
+                </form>
+                <form class="name-input form-custom">
+                    <label for="message">Update your name:</label>
+                    <input type="text" id="name" placeholder="Type name here..." maxlength="10" required>
+                    <button type="submit">update</button>
+                </form>
+            </div>
+            <div class="notification display-none">
+                <p class="notif-paragraph">Name updated!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="http://cdn.date-fns.org/v1.9.0/date_fns.min.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDBY-pOH71hJblzgV6uOE8tSKezjmGq7Sw",
+            authDomain: "yuun-test-ground.firebaseapp.com",
+            projectId: "yuun-test-ground",
+            storageBucket: "yuun-test-ground.appspot.com",
+            messagingSenderId: "882433207791",
+            appId: "1:882433207791:web:75f8bb895dd83b65ad1a1a",
+            measurementId: "G-ZM661VGBZ9"
+        };
+        firebase.initializeApp(config);
+        const database = firebase.firestore();  
+    </script>
+    <script src="js/chat.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
+
+<!-- <div class="message-display">
+    <div class="message-content">
+        <p class="username-00">Yuun:</p>
+        <p class="message-01">trying out this system dont mind me lol</p>
+    </div>
+    <div class="message-timestamp">
+        <p class="tstamp-02">02:35 PM</p>
+    </div>
+</div> -->
